@@ -1,0 +1,79 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4; /* Couleur de fond claire */
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    line-height: 1.6; /* Hauteur de ligne pour un meilleur espacement */
+}
+
+header {
+    background: #333; /* Couleur de fond du header */
+    color: #fff; /* Couleur du texte dans le header */
+    padding: 10px 0; /* Espacement autour du header */
+    text-align: center; /* Centrer le texte */
+}
+
+nav {
+    margin: 20px 0; /* Marge autour du menu */
+}
+
+nav a {
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Supprimer le soulignement */
+    margin: 0 15px; /* Espacement entre les liens */
+    font-weight: bold; /* Mettre en gras */
+}
+
+.container {
+    display: flex; /* Utiliser Flexbox pour le layout */
+    flex-direction: column; /* Disposition en colonne par défaut */
+    align-items: center; /* Centrer les éléments */
+    margin: 20px; /* Marge autour de la conteneur principal */
+}
+
+img {
+    max-width: 100%; /* L'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 8px; /* Arrondir les coins des images */
+}
+
+.section {
+    background: #fff; /* Fond blanc pour les sections */
+    border-radius: 8px; /* Arrondir les coins des sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 20px; /* Espacement à l'intérieur des sections */
+    margin-bottom: 20px; /* Marge en bas des sections */
+    width: 100%; /* La section prend toute la largeur */
+    max-width: 800px; /* Largeur maximale pour les sections */
+}
+
+footer {
+    text-align: center; /* Centrer le texte dans le footer */
+    padding: 10px 0; /* Espacement autour du footer */
+    background: #333; /* Couleur de fond du footer */
+    color: #fff; /* Couleur du texte dans le footer */
+    position: relative; /* Positionnement relatif pour le footer */
+    bottom: 0; /* Ancrer le footer en bas */
+    width: 100%; /* Largeur du footer */
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Passer à une colonne pour les petits écrans */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Menu vertical sur petits écrans */
+    }
+
+    nav a {
+        margin: 5px 0; /* Espacement vertical pour les liens */
+    }
+}
